@@ -1,0 +1,29 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "A basic Node.js application structure includes the root directory, package.json for project metadata and dependencies, an entry point (app.js), node_modules for libraries, and folders for routes, controllers, views, and static assets (public). It can also include configuration and middleware directories depending on the project's complexity",
+  "main": "src",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node -r dotenv/config ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hemantpatil5887/nodejs.git"
+  },
+  "author": "Hemant Patil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hemantpatil5887/nodejs/issues"
+  },
+  "homepage": "https://github.com/Hemantpatil5887/nodejs#readme",
+  "dependencies": {
+    "body-parser": "1.20.3",
+    "dotenv": "16.4.5",
+    "express": "4.21.0",
+    "express-http-context": "1.2.4"
+  }
+}
