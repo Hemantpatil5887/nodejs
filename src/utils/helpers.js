@@ -4,6 +4,7 @@ const app = express();
 const httpContext = require('express-http-context');
 
 module.exports = { 
+    express,
     app,
     httpContext
 };
