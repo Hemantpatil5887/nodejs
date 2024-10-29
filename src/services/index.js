@@ -1,5 +1,5 @@
 const { fetchEmployee, allEmployeesCount } = require("../dal");
-
+// const log = require('./../utils');
 const getEmployeeList = async (data) => {
     console.log("HERE ....")
     const { currentPage = 1, pageSize = 10 } = data;
@@ -14,7 +14,7 @@ const getEmployeeList = async (data) => {
 }
 
 const responseFormatter = (results, currentPage, pageSize, totalRows) => {
-    console.log({ results, currentPage, pageSize, totalRows })
+    // log.info("Response format",{ results, currentPage, pageSize, totalRows })
    
     const totalCount = totalRows[0].count;
     console.log("totalCount - ", totalCount)
